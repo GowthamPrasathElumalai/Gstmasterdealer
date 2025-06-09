@@ -535,12 +535,11 @@ function renderDistrictData(district) {
 
   let html =
     '<table border="1" cellpadding="5" cellspacing="0" style="width:100%; border-collapse: collapse;">' +
-    '<thead><tr><th>GSTIN</th><th>Trade Name</th><th>District</th><th>Raw Address</th></tr></thead><tbody>';
+    '<thead><tr><th>GSTIN</th><th>Trade Name</th><th>Raw Address</th></tr></thead><tbody>';
   filtered.forEach((item) => {
     html += `<tr>
       <td>${item.GSTIN || item.gstin || '-'}</td>
       <td>${item.tradeName || '-'}</td>
-      <td>${item.district || '-'}</td>
       <td>${item.rawAddress || '-'}</td>
     </tr>`;
   });
